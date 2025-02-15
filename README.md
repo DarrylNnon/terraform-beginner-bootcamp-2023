@@ -86,3 +86,16 @@ All future workspaces launched will set the env vars for all bash terminals open
 gp env PROJECT_ROOT='/workspace/terraform-beginner-2023'
 echo $PROJECT_ROOT
 ```
+
+
+### AWS CLI installation
+
+AWS CLI is install for this project via bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+We can check if it work properly by running this command
+
+`aws sts get-caller-identity`
+
+
+    
+    
