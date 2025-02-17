@@ -96,6 +96,57 @@ We can check if it work properly by running this command
 
 `aws sts get-caller-identity`
 
+## Terraform Basics
 
+[terraform-random](https://registry.terraform.io/providers/hashicorp/random/)
+
+### Terraform registry
+Terraform sources their provider and modules from the terraform registry which is located at [registry.terraform.io](https://registry.terraform.io/)
     
     
+- **Providers** are plugin use to interact with api cloud platform
+- **Module** are way to make large amount of terraform code modular, portable and sharable.
+
+### Terraform console
+
+We can see a list of all the terraform commands by simply typing `terraform`
+
+#### Terraform Init
+
+At the start of a new terraform project we will run `terraform init` to download the binaries for the terraform provider.
+
+#### Terraform Plan
+
+`terraform plan`
+Will generate out a changeset, about the state of our infrastructure and what will be changed.
+
+We can output this changeset ie."plan" to be passed to an apply, but often i can ignore outputing.
+
+#### Terraform apply
+
+`terraform apply`
+This run a plan and pass the changeset to be executed by terraform. Apply should prompt out yes or no.
+
+If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
+
+#####  Terraform lock files
+
+`.terraform.lock.hcl` contains the locked versioning for the providers or modulues that should be used with this project.
+
+The terraform lock fle **should be commited** to my version control system (vsc) eg. Github
+
+#### Terraform State files
+
+`.terraform.tfstate` contain information about the current state of my infrastructure.
+
+This file **should not be commited** to my version system vsc
+
+This  file can contain sensitive data.
+
+If i lose this file, i lose knowing the state of my infrastructure.
+
+`.terraform.tfstate.backup` is the previous state file state
+
+##### Terraform Directory
+
+`.terraform` directory contains binaries of terraform providers.
