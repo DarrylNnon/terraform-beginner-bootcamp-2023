@@ -1,4 +1,14 @@
 terraform {
+  # backend remote
+  cloud { 
+    
+    organization = "Terraform-Bootcamp-2025" 
+
+    workspaces { 
+      name = "terra-house-1" 
+  } 
+}
+  
   required_providers {
     random = {
       source = "hashicorp/random"
