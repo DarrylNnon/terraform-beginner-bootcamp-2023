@@ -150,3 +150,12 @@ If i lose this file, i lose knowing the state of my infrastructure.
 ##### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
+
+
+####   Terraform destroy
+
+`terraform destroy`
+This will destroy resources.
+
+I can also use the auto aprove flag to skip prompt
+eg. `terraform apply --auto-approve`
