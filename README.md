@@ -159,3 +159,33 @@ This will destroy resources.
 
 I can also use the auto aprove flag to skip prompt
 eg. `terraform apply --auto-approve`
+
+##### Issues with  terraform login 
+
+when attempting to run `terraform login`. it will launch a wiswig bash. It doesn't work as expected.
+
+The work around is manually generate a token in terraform cloud
+
+```
+https:app.terraform.io/app/settings/token?source=terraform-login
+```
+
+Then create the file manually:
+
+```sh
+touch /home/codespace/terraform.d/credentials.tfrc.json
+open  /home/codespace/terraform.d/credentials.tfrc.json
+```
+
+Then provide the following code (replace my token in the file):
+
+
+```json
+{
+    "credentials": {
+        "app.terraform.io": {
+            "token": "MY-TERRAFORM-CLOUD-TOKEN"
+        }
+    }
+}
+```
