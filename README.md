@@ -191,3 +191,28 @@ Then provide the following code (replace my token in the file):
 ```
 
 We have automated the process using bash scripting eg. [bin/generate_tfrc_credentials]
+
+### setting tf for terrafom alias
+
+we do `nano ~/.bash_profile` then we write this command: 
+`alias tf="terraform"`
+And we do `source ~/.bash_profile` to reload it.
+
+## Automate the bash_profile that will add the alias tf in our environment.
+
+```sh
+#!/bin/bash
+# check if the alias is already exists in the .bash_profile
+grep -q 'alias tf="terraform"' ~/.bash_profile
+
+# $? is a specal variable in bash that hold the exit status of the last
+if [ $? -ne 0 ]; then
+    # if the alias does not exist, append it
+    echo 'alias tf="terraform"' >> ~/.bash_profile
+    echo "alias added successefully."
+else
+    # Inform the user if the alias already exists
+    echo "Alias already exists in .bash_profile."
+fi
+```
+life is beautiful when you don't give up.
