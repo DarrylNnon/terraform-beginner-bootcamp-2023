@@ -189,3 +189,5 @@ Then provide the following code (replace my token in the file):
     }
 }
 ```
+
+We have automated the process using bash scripting eg. [bin/generate_tfrc_credentials]
