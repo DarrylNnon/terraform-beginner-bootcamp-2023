@@ -241,3 +241,5 @@ after digging around we notice that in order for our website to work we have to 
 
 bingo: here is my first hosting website working perfectly
 ![https://d1wrfw9obmt1d3.cloudfront](https://d1wrfw9obmt1d3.cloudfront.net/)
+
+thanks!
