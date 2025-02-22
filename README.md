@@ -216,3 +216,30 @@ else
 fi
 ```
 life is beautiful when you don't give up.
+
+# today week 1 of terraform bootcamp
+we create a folder name `public` inside we created a file `index.html` we created a sample html page for finish pancake.we paste in.
+
+# we install some features
+`npm install http-server -g`
+next we do `http-server`
+
+# push the html to our s3 bucket(copy a local file into s3 bucket)
+`aws s3 cp public/index.html  s3://myterraformbucket22/index.html`
+
+result is: `upload: public/index.html to s3://myterraformbucket22/index.html`
+next go to your bucket and click into it-> go to property->you ll see the link for the hosting website at the end of the page
+
+
+Note: after launching the static websiite, we notice do not have acces because s3 is blocking in public inbound. so the solution is to create a cloudfront for distribution and assign a version endpoint to access the website . copy the distribution domain name below section details then we also need to add a bucket policy
+
+We check the origin acces control
+`aws cloudfront list-origin-access-controls`
+go to origin access and clic on create origin access.
+
+after digging around we notice that in order for our website to work we have to create a distribution with origin access (recommended)..give a name and after creation we will copy the bucket policy s3 and we will click the link provided by aws on the WANRING YELLOW sign and paste it under bucket policy after editing.
+
+bingo: here is my first hosting website working perfectly
+![https://d1wrfw9obmt1d3.cloudfront](https://d1wrfw9obmt1d3.cloudfront.net/)
+
+i have use almost all of my codespace usage.
