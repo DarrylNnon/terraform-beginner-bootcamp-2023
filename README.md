@@ -240,6 +240,7 @@ go to origin access and clic on create origin access.
 after digging around we notice that in order for our website to work we have to create a distribution with origin access (recommended)..give a name and after creation we will copy the bucket policy s3 and we will click the link provided by aws on the WANRING YELLOW sign and paste it under bucket policy after editing.
 
 bingo: here is my first hosting website working perfectly
-![https://d1wrfw9obmt1d3.cloudfront](https://d1wrfw9obmt1d3.cloudfront.net/)
+<img width="750" alt="first-hosting-website" src="https://github.com/user-attachments/assets/cc921336-9443-4815-877f-0ff910508cbd" />
+
 
 i have use almost all of my codespace usage.
