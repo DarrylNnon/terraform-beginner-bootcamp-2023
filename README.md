@@ -243,3 +243,17 @@ bingo: here is my first hosting website working perfectly
 ![https://d1wrfw9obmt1d3.cloudfront](https://d1wrfw9obmt1d3.cloudfront.net/)
 
 i have use almost all of my codespace usage.
+
+## Table of Content
+
+- [Semantic versioning](#semantic-versioning)
+- [Install Terraform](#install-the-terraform-cli)
+- [Consideration with the terraform CLI change](#consideration-with-the-terraform-cli-changes)
+
+
+### Semantic versioning
+
+This project is ging to utilize semantic versioninf for its tagging.
+- [semver.org](https://semver.org/)
+
+
