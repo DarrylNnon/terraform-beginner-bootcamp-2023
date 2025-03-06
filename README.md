@@ -256,4 +256,32 @@ i have use almost all of my codespace usage.
 This project is ging to utilize semantic versioninf for its tagging.
 - [semver.org](https://semver.org/)
 
+#### import and configuration drift
+
+- [https://registry.terraform.io/](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
+
+## Dealing with configuration drift
+
+### Fix Missing ressources with Terraform Import
+
+# Fix Manual configuration
+
+## What happens if we lose our state file?
+
+If i lose my statefile, i most likley have to tear down all your cloud infrastructure manually.
+
+You can use terraform port but it won't for all cloud resources. You need check the terraform providers documentation for which resources support import.
+
+### Fix Missing Resources with Terraform Import
+
+`terraform import aws_s3_bucket.bucket bucket-name`
+
+[Terraform Import](https://developer.hashicorp.com/terraform/cli/import)
+[AWS S3 Bucket Import](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
+
+### Fix Manual Configuration
+
+If someone goes and delete or modifies cloud resource manually through ClickOps. 
+
+If i run Terraform plan is will attempt to put our infrastracture back into the expected state fixing Configuration Drift
 
