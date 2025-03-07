@@ -285,3 +285,6 @@ If someone goes and delete or modifies cloud resource manually through ClickOps.
 
 If i run Terraform plan is will attempt to put our infrastracture back into the expected state fixing Configuration Drift
 
+# AWS Terrahouse Module
+- setup directory structure for our module
+- port our s3 bucket into the module
