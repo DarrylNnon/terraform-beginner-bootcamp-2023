@@ -288,3 +288,5 @@ If i run Terraform plan is will attempt to put our infrastracture back into the 
 # AWS Terrahouse Module
 - setup directory structure for our module
 - port our s3 bucket into the module
+  
+![image](https://github.com/user-attachments/assets/267f6415-4b59-49f2-8a34-6c56794fef70)
