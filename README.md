@@ -290,3 +290,36 @@ If i run Terraform plan is will attempt to put our infrastracture back into the 
 - port our s3 bucket into the module
   
 ![image](https://github.com/user-attachments/assets/267f6415-4b59-49f2-8a34-6c56794fef70)
+
+
+# S3 static website hosting
+
+- [] configure out bucket s3 static website hosting
+- [] Upload an index.html
+- [] Upload an error.html
+- [] Update our outputs for static hosting url
+
+
+# output from chagpt
+
+📌 Steps to Deploy
+1️⃣ Save the script as main.tf.
+2️⃣ Create index.html and error.html in the same directory. Example:
+
+
+<!-- index.html -->
+<h1>🚀 Welcome to My Static Website!</h1>
+<p>This site is hosted on AWS S3 using Terraform.</p>
+3️⃣ Initialize and Deploy with Terraform
+
+
+terraform init
+terraform apply -auto-approve
+
+4️⃣ Access Your Website
+Run:
+
+
+terraform output website_url
+Open the URL in your browser! 🌍✨
+
