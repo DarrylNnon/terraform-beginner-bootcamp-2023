@@ -32,7 +32,7 @@ chmod u+x ./bin/install_terraform_cli
 or we can do chmod 777 ./bin/install_terraform_cli
 ```
 
-### Working with Env vars
+### Working with Env vars ( i open it again today 7/5/2025)
 
 ### env command 
 
